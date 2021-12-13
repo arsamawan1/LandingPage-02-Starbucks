@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Menu</a></li>
+          <li><a>What's new</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>it's not just coffee<br />it's <span>Starbucks</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            provident blanditiis delectus quibusdam fugit, dicta nostrum,
+            corporis minima consequatur beatae aperiam quasi laudantium quae,
+            sapiente error debitis porro vero sit earum iure perspiciatis aut
+            distinctio ad commodi! Iste libero ab voluptatum iure,
+            exercitationem impedit nostrum.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="imgbox">
+          <img src="images/im1.png" class="slider" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="images/thumb1.png"
+            onclick="imgslider('images/im1.png'); changeColor('#42895c')"
+          />
+        </li>
+        <li>
+          <img
+            src="images/thumb2.png"
+            onclick="imgslider('images/img2.png'); changeColor('#ede4e4')"
+          />
+        </li>
+        <li>
+          <img
+            src="images/thumb3.png"
+            onclick="imgslider('images/img3.png'); changeColor('#7a1d5e')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li><i class="fab fa-facebook-f"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+      </ul>
+    </section>
+    <script>
+      function imgslider(anything) {
+        document.querySelector(".slider").src = anything;
+      }
+      function changeColor(color) {
+        const col = document.querySelector(".circle");
+        col.style.background = color;
+      }
+    </script>
+  </body>
+</html>
